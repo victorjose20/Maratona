@@ -1,0 +1,56 @@
+.container {
+    background-color: #CF0F47;
+    color: #FFDEDE;
+    .navegacao {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #CF0F47;
+        padding: 15px 0px;
+
+        .nome-logo {
+           
+            .link-home {
+                text-decoration: none;
+                background-color: #CF0F47;
+                color: #FFDEDE;
+
+                .tv-icone {
+                    margin-left: 15px;
+                }
+            }
+        }
+
+        .formulario {
+            display: flex;
+            gap: 5px;
+            
+
+            input {
+                background-color: #FFDEDE;
+                height: 30px;
+                border-radius: 10px;
+                padding-left: 15px;
+                border: 1px solid #CF0F47;
+            }
+
+            .botao {
+                margin-right: 15px;
+                border-radius: 5px;
+                width: 25px;
+                border: 1px solid black;
+              
+                .pesquisar-icone {
+                    text-decoration: none;
+                    color: #FFDEDE;
+                    cursor: pointer;
+                      &:hover{
+                    color: #CF0F47;
+                }
+                }
+            }
+
+        }
+
+    }
+}
