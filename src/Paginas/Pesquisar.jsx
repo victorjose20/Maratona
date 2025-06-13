@@ -40,7 +40,7 @@ function Pesquisar() {
         <div className="container-pesquisar">
             <h2 className="resultados">Resultados para: <span>{consulta}</span></h2>
             <div className={`cards ${series.length === 1 ? "unico" : ""}`}>
-                {series.length === 0 && <p>Carregando...</p>}
+                {series.length === 0 && <p className="carregando">Carregando...</p>}
                 {series.map(itens => (
                     <div className="card" key={itens.id}>
                         <p key={itens.id}>{itens.name}</p>
