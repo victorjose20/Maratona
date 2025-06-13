@@ -1,5 +1,4 @@
 .container-pesquisar {
-
     background-color: #FFDEDE;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -27,8 +26,6 @@
 
         &.unico {
             display: flex;
-            align-items: center;
-            justify-content: center;
             height: 80vh;
         }
 

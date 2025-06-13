@@ -1,19 +1,17 @@
-.container-melhores{
-    height: 100vh;
+.container-melhores {
+    height: 100%;
     background-color: #FFDEDE;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 30px;
     justify-items: center;
     padding-bottom: 35px;
-    h1{
-        
-    }
-    
-    .resultados{
+
+    .resultados {
         margin: 25px 0px;
     }
-    .cards{
+
+    .cards {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         justify-items: center;
@@ -23,32 +21,37 @@
         margin: 0 25px;
         place-items: center;
         font-weight: bold;
-        .carregando{
+
+        .carregando {
             height: 100vh;
             text-align: center;
         }
-       .card{
-        display: flex;
-        flex-direction: column;
-        background-color: #CF0F47;
-        border: 3px solid #CF0F47;
-        border-radius: 10px;
-        
-        .nome-serie{
-            padding: 5px;
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            background-color: #CF0F47;
+            border: 3px solid #CF0F47;
+            border-radius: 10px;
+
+            .nome-serie {
+                padding: 5px;
+            }
         }
-       }button{
-        background-color:#CF0F47;
-        border: 1px solid black;
-        border-radius: 5px;
-        padding: 5px 5px;
-        margin: 5px;
-        font-weight: bold;
-        cursor: pointer;
-          &:hover{
-        background-color: #FFDEDE;
-       }
-       }
-     
+
+        button {
+            background-color: #CF0F47;
+            border: 1px solid black;
+            border-radius: 5px;
+            padding: 5px 5px;
+            margin: 5px;
+            font-weight: bold;
+            cursor: pointer;
+
+            &:hover {
+                background-color: #FFDEDE;
+            }
+        }
+
     }
 }
