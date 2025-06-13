@@ -23,7 +23,10 @@
         margin: 0 25px;
         place-items: center;
         font-weight: bold;
-        
+        .carregando{
+            height: 100vh;
+            text-align: center;
+        }
        .card{
         display: flex;
         flex-direction: column;
