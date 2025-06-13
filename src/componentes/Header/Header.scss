@@ -1,6 +1,9 @@
 .container {
     background-color: #CF0F47;
     color: #FFDEDE;
+
+
+
     .navegacao {
         display: flex;
         justify-content: space-between;
@@ -9,7 +12,10 @@
         padding: 15px 0px;
 
         .nome-logo {
-           
+            @media (max-width:380px) {
+                font-size: 20px;
+            }
+
             .link-home {
                 text-decoration: none;
                 background-color: #CF0F47;
@@ -24,7 +30,7 @@
         .formulario {
             display: flex;
             gap: 5px;
-            
+
 
             input {
                 background-color: #FFDEDE;
@@ -39,14 +45,15 @@
                 border-radius: 5px;
                 width: 25px;
                 border: 1px solid black;
-              
+
                 .pesquisar-icone {
                     text-decoration: none;
                     color: #FFDEDE;
                     cursor: pointer;
-                      &:hover{
-                    color: #CF0F47;
-                }
+
+                    &:hover {
+                        color: #CF0F47;
+                    }
                 }
             }
 

@@ -28,7 +28,6 @@ const [melhoresS, setMelhoresS] = useState([]);
 
      useEffect(() => {
             const buscarMelhores = `${melhores}?${chaveApi}`;
-            console.log(buscarMelhores)
             melhoresRanqueados(buscarMelhores);
         }, [])
 
