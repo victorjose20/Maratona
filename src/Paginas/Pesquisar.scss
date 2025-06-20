@@ -1,4 +1,5 @@
 .container-pesquisar {
+
     background-color: #FFDEDE;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -15,7 +16,7 @@
     }
 
     .cards {
-
+            height: 100vh;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         justify-items: center;
