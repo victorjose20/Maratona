@@ -3,6 +3,7 @@ import { useEffect, useState } from "react"
 import './Melhores.scss'
 import Tv from "../../Paginas/Tv";
 import { Link } from "react-router";
+import NaoEncontrada from "../../Paginas/NaoEncontrada";
 
 const melhores = import.meta.env.VITE_API
 const chaveApi = import.meta.env.VITE_API_KEY
@@ -38,7 +39,7 @@ const [melhoresS, setMelhoresS] = useState([]);
             <h1>Top Series</h1>
             <div className="cards">
                 
-                {melhoresS.length === 0 && <p className="carregando">Carregando...</p>}
+                {melhoresS.length === 0 && <NaoEncontrada/>}
                 {melhoresS.map(itens => (
                     <div key={itens.id} className="card">
                         <p className="nome-serie" key={itens.id}>{itens.name}</p>

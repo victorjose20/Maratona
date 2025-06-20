@@ -2,6 +2,7 @@ import axios from 'axios';
 import { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router';
 import './Tv.scss'
+import NaoEncontrada from './NaoEncontrada';
 
 const escolhido = import.meta.env.VITE_API_1
 const chaveApi = import.meta.env.VITE_API_KEY
@@ -50,7 +51,7 @@ function Tv() {
 
                 </div>
             ) : (
-                <p>Carregando...</p>
+                <NaoEncontrada />
             )}
         </>
     )

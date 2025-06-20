@@ -43,8 +43,8 @@ function Pesquisar() {
                 {series.length === 0 && <p className="carregando">Carregando...</p>}
                 {series.map(itens => (
                     <div className="card" key={itens.id}>
-                        <p key={itens.id}>{itens.name}</p>
-                        <img src={`${imgposter}${itens.poster_path}`} alt="" />
+                        <p  key={itens.id}>{itens.name}</p>
+                        <img className="imagem-serie" src={`${imgposter}${itens.poster_path}`} alt="" />
                         <Link to={`/Tv/${itens.id}`} ><button >Saber Mais</button></Link>
                     </div>
 
