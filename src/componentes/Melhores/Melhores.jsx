@@ -42,7 +42,7 @@ const [melhoresS, setMelhoresS] = useState([]);
                 {melhoresS.map(itens => (
                     <div key={itens.id} className="card">
                         <p className="nome-serie" key={itens.id}>{itens.name}</p>
-                        <img src={`${imgposter}${itens.poster_path}`} alt="" />
+                        <img src={`${imgposter}${itens.poster_path}`} className="imagem-serie" alt="" />
 
                         <Link to={`/Tv/${itens.id}`} ><button >Saber Mais</button></Link>
                         
